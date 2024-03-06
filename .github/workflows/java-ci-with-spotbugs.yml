@@ -17,10 +17,5 @@ jobs:
       - name: Generate gradle wrapper
         run: gradle wrapper --gradle-version=7.6
 
-      - name: Set up gradle
-        uses: gradle/gradle-build-action@v3
-        with:
-          gradle-version: 7.6
-
       - name: Execute Gradle build and SpotBugs
         run: ./gradlew build
