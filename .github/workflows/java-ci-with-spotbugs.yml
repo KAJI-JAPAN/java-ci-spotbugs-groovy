@@ -8,7 +8,6 @@ jobs:
       - name: My first step - check out repository
         uses: actions/checkout@v4
 
-      #temurinで良いのか
       - name: Set up Java 17
         uses: actions/setup-java@v3
         with:
